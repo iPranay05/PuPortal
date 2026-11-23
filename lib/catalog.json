@@ -1,0 +1,4625 @@
+[
+  {
+    "id": 1,
+    "name": "Higher Studies",
+    "fields": [
+      "Student Name",
+      "Admission No",
+      "Student Gender",
+      "Programme Completed",
+      "Graduation Year",
+      "Institution Joined",
+      "Country",
+      "Programme Admitted To",
+      "Level (Masters / PhD / MBA / Other)",
+      "Admission Year",
+      "Joined (Yes / No)",
+      "Scholarship (if any)",
+      "Exam Qualified (GATE / GRE / etc., optional)"
+    ],
+    "table": "higher_studies",
+    "columns": [
+      {
+        "key": "student_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "admission_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "student_gender",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "programme_completed",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "graduation_year",
+        "type": "smallint",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "institution_joined",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "country",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "programme_admitted_to",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "level",
+        "type": "text",
+        "options": [
+          "Masters",
+          "PhD",
+          "MBA",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "admission_year",
+        "type": "smallint",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "joined",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "scholarship",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "exam_qualified",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Placements",
+    "fields": [
+      "Student Name",
+      "Admission No",
+      "Student Gender",
+      "Programme Completed",
+      "Graduation Year",
+      "Company Name",
+      "Company Location",
+      "Company Sector (IT / Core / Finance / Other)",
+      "Company Type (MNC / Startup / PSU / Other)",
+      "Job Role",
+      "Package (LPA)",
+      "Package Type (Fixed / Variable / Includes bonus)",
+      "Offer Type (On-campus / Off-campus / Pool)",
+      "Offer Date",
+      "Joining Date",
+      "Joining Status",
+      "Internship Converted to Offer (Yes / No)"
+    ],
+    "table": "placements",
+    "columns": [
+      {
+        "key": "student_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "admission_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "student_gender",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "programme_completed",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "graduation_year",
+        "type": "smallint",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "company_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "company_location",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "company_sector",
+        "type": "text",
+        "options": [
+          "IT",
+          "Core",
+          "Finance",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "company_type",
+        "type": "text",
+        "options": [
+          "MNC",
+          "Startup",
+          "PSU",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "job_role",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "package",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "package_type",
+        "type": "text",
+        "options": [
+          "Fixed",
+          "Variable",
+          "Includes bonus"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "offer_type",
+        "type": "text",
+        "options": [
+          "On-campus",
+          "Off-campus",
+          "Pool"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "offer_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "joining_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "joining_status",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "internship_converted_to_offer",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Internships",
+    "fields": [
+      "Student Name",
+      "Admission No",
+      "Student Gender",
+      "Class",
+      "Company Name",
+      "Company Address",
+      "Company Sector (IT / Core / Finance / Other)",
+      "Company Type (MNC / Startup / PSU / Other)",
+      "Company Contact Person (restricted)",
+      "Role / Project Title",
+      "Skills or Domain",
+      "Type of Internship",
+      "Credit Based (Yes / No)",
+      "Credits",
+      "Start Date",
+      "End Date",
+      "Duration (Months)",
+      "Mode (Onsite / Remote / Hybrid)",
+      "Stipend",
+      "Faculty Mentor",
+      "MoU Linked (optional)",
+      "Outcome (Certificate / Report submitted / Pre-placement offer)",
+      "Pre-Placement Offer Received (Yes / No)"
+    ],
+    "table": "internships",
+    "columns": [
+      {
+        "key": "student_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "admission_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "student_gender",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "class",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "company_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "company_address",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "company_sector",
+        "type": "text",
+        "options": [
+          "IT",
+          "Core",
+          "Finance",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "company_type",
+        "type": "text",
+        "options": [
+          "MNC",
+          "Startup",
+          "PSU",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "company_contact_person",
+        "type": "text",
+        "options": [],
+        "restricted": true
+      },
+      {
+        "key": "role_project_title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "skills_or_domain",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "type_of_internship",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "credit_based",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "credits",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "duration",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "mode",
+        "type": "text",
+        "options": [
+          "Onsite",
+          "Remote",
+          "Hybrid"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "stipend",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "faculty_mentor",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "mou_linked",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "outcome",
+        "type": "text",
+        "options": [
+          "Certificate",
+          "Report submitted",
+          "Pre-placement offer"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "pre_placement_offer_received",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Value-Added Courses Organized",
+    "fields": [
+      "Course Name",
+      "Course Code",
+      "Course Type (Value-Added / Skill Enhancement / Certificate)",
+      "Department(s) offering the course",
+      "Provider",
+      "Provider Type (In-house / External / Spoken Tutorial / Industry)",
+      "Resource Person / Instructor",
+      "Target Year of Students (FY / SY / TY / LY)",
+      "Duration (Hours), required",
+      "Times Offered in Year",
+      "Start Date",
+      "End Date",
+      "Mode",
+      "Fee per Student",
+      "Assessment Method (Exam / Project / Attendance)",
+      "Students Enrolled",
+      "Students Completed",
+      "Certificate Issued (Yes / No)",
+      "Syllabus Link"
+    ],
+    "table": "value_added_courses",
+    "columns": [
+      {
+        "key": "course_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "course_code",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "course_type",
+        "type": "text",
+        "options": [
+          "Value-Added",
+          "Skill Enhancement",
+          "Certificate"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "department_s_offering_the_course",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "provider",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "provider_type",
+        "type": "text",
+        "options": [
+          "In-house",
+          "External",
+          "Spoken Tutorial",
+          "Industry"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "resource_person_instructor",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "target_year_of_students",
+        "type": "text",
+        "options": [
+          "FY",
+          "SY",
+          "TY",
+          "LY"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "duration",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "times_offered_in_year",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "mode",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "fee_per_student",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "assessment_method",
+        "type": "text",
+        "options": [
+          "Exam",
+          "Project",
+          "Attendance"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "students_enrolled",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "students_completed",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "certificate_issued",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "syllabus_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Industry Certificates / Courses Attended by Students",
+    "fields": [
+      "Certificate / Course Name",
+      "Source (In-house / Outside)",
+      "Provider / Certifying Body",
+      "Platform (Coursera / NPTEL / Udemy / Oracle / Other)",
+      "Domain (AI / Cyber Security / Web Development / Cloud / Other)",
+      "Level (Foundation / Intermediate / Advanced)",
+      "Mode (Online / Offline / Hybrid)",
+      "Target Year of Students (FY / SY / TY / LY)",
+      "Resource Person / Instructor",
+      "Linked MoU",
+      "Duration (Hours)",
+      "Start Date",
+      "End Date",
+      "Fee per Student",
+      "Fee Paid By (Student / Institution / Sponsored)",
+      "Total Expenditure by Institution",
+      "Students Enrolled",
+      "Students Attended",
+      "Students Completed",
+      "Students Certified (passed the exam)",
+      "Gender-wise Count (Male / Female / Other)",
+      "Exam Required (Yes / No)",
+      "Outcome (Certificate / Badge / Exam score / Attendance only)",
+      "Certificate Link or Sample"
+    ],
+    "table": "student_certificates",
+    "columns": [
+      {
+        "key": "certificate_course_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "source",
+        "type": "text",
+        "options": [
+          "In-house",
+          "Outside"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "provider_certifying_body",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "platform",
+        "type": "text",
+        "options": [
+          "Coursera",
+          "NPTEL",
+          "Udemy",
+          "Oracle",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "domain",
+        "type": "text",
+        "options": [
+          "AI",
+          "Cyber Security",
+          "Web Development",
+          "Cloud",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "level",
+        "type": "text",
+        "options": [
+          "Foundation",
+          "Intermediate",
+          "Advanced"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "mode",
+        "type": "text",
+        "options": [
+          "Online",
+          "Offline",
+          "Hybrid"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "target_year_of_students",
+        "type": "text",
+        "options": [
+          "FY",
+          "SY",
+          "TY",
+          "LY"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "resource_person_instructor",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_mou",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "duration",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "fee_per_student",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "fee_paid_by",
+        "type": "text",
+        "options": [
+          "Student",
+          "Institution",
+          "Sponsored"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "total_expenditure_by_institution",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "students_enrolled",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "students_attended",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "students_completed",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "students_certified",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "gender_wise_count",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "exam_required",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "outcome",
+        "type": "text",
+        "options": [
+          "Certificate",
+          "Badge",
+          "Exam score",
+          "Attendance only"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "certificate_link_or_sample",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Scholarships",
+    "fields": [
+      "Scheme Name",
+      "Scheme Level (Central / State / Institute / Private)",
+      "Scholarship Type (Merit / Need-based / Minority / Disability / Sports / Other)",
+      "Provider Type (Government / Institution / Private / NGO)",
+      "Provider Name",
+      "Sanction Order No",
+      "Date Awarded",
+      "Disbursement Date",
+      "Disbursement Mode (Bank transfer / Fee waiver / Cheque)",
+      "Total Amount Sanctioned",
+      "Total Amount Disbursed",
+      "Number of Beneficiaries",
+      "Fresh Beneficiaries",
+      "Renewed Beneficiaries",
+      "Male Students",
+      "Female Students",
+      "Other / Not Disclosed",
+      "General (category-wise count)",
+      "SC (category-wise count)",
+      "ST (category-wise count)",
+      "OBC (category-wise count)",
+      "EWS (category-wise count)"
+    ],
+    "table": "scholarships",
+    "columns": [
+      {
+        "key": "scheme_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "scheme_level",
+        "type": "text",
+        "options": [
+          "Central",
+          "State",
+          "Institute",
+          "Private"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "scholarship_type",
+        "type": "text",
+        "options": [
+          "Merit",
+          "Need-based",
+          "Minority",
+          "Disability",
+          "Sports",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "provider_type",
+        "type": "text",
+        "options": [
+          "Government",
+          "Institution",
+          "Private",
+          "NGO"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "provider_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "sanction_order_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "date_awarded",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "disbursement_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "disbursement_mode",
+        "type": "text",
+        "options": [
+          "Bank transfer",
+          "Fee waiver",
+          "Cheque"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "total_amount_sanctioned",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "total_amount_disbursed",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_beneficiaries",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "fresh_beneficiaries",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "renewed_beneficiaries",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "male_students",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "female_students",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "other_not_disclosed",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "general",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "sc",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "st",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "obc",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "ews",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Clubs",
+    "fields": [
+      "Club Name",
+      "Club Type (NSS / NCC / Red Cross / Eco / Cultural / Technical / Other)",
+      "Club Description / Objectives",
+      "Affiliated Body (University NSS Cell / National Body / Other)",
+      "Faculty Coordinator",
+      "Student Lead",
+      "Year Established",
+      "Socially Engaging (Yes / No)",
+      "Number of Members (for the academic year)",
+      "Male Members",
+      "Female Members",
+      "Other / Not Disclosed",
+      "Number of Activities Conducted in the Year",
+      "Awards Received in the Year (count)",
+      "Total Budget / Expenditure for the Year",
+      "Club Email or Social Media Link"
+    ],
+    "table": "clubs",
+    "columns": [
+      {
+        "key": "club_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "club_type",
+        "type": "text",
+        "options": [
+          "NSS",
+          "NCC",
+          "Red Cross",
+          "Eco",
+          "Cultural",
+          "Technical",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "club_description_objectives",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "affiliated_body",
+        "type": "text",
+        "options": [
+          "University NSS Cell",
+          "National Body",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "faculty_coordinator",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "student_lead",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "year_established",
+        "type": "smallint",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "socially_engaging",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_members",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "male_members",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "female_members",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "other_not_disclosed",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_activities_conducted_in_the_year",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "awards_received_in_the_year",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "total_budget_expenditure_for_the_year",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "club_email_or_social_media_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Faculty Profile",
+    "fields": [
+      "Employee ID (restricted)",
+      "Name (Title, First, Middle, Last)",
+      "Photo",
+      "Gender",
+      "Date of Birth (restricted)",
+      "Category (General / SC / ST / OBC / EWS)",
+      "Designation",
+      "Employment Type (Full-time / Part-time / Visiting / Contract)",
+      "Nature of Appointment (Regular / Ad-hoc / Contract / Visiting)",
+      "Cadre (Teaching / Non-teaching)",
+      "Pay Scale / Pay Level",
+      "University Approval Status",
+      "University Approval Ref No",
+      "Joining Date",
+      "Date of Last Promotion",
+      "Leaving Date",
+      "Employment Status (Active / On Leave / Resigned / Retired)",
+      "Highest Qualification",
+      "UG Education Details",
+      "PG Education Details",
+      "PhD Education Details",
+      "Certifications (Diploma, etc.)",
+      "PhD (Yes / No)",
+      "PhD University",
+      "PhD Award Year",
+      "Recognised PhD Guide (Yes / No)",
+      "Number of Scholars Registered",
+      "Specialisation",
+      "Research Interests",
+      "Total Experience (Teaching / Industry / Research)",
+      "Email (restricted)",
+      "Phone (restricted)",
+      "ORCID ID",
+      "Scopus ID",
+      "Google Scholar ID",
+      "Vidwan or Other Research Profile Link",
+      "Sanctioned Posts (per department, designation, year)",
+      "Previous Experience (Employer, Role, From, To)",
+      "PhD Guidance (Scholar, Status, Thesis Title)"
+    ],
+    "table": "faculty_profiles",
+    "columns": [
+      {
+        "key": "employee_id",
+        "type": "text",
+        "options": [],
+        "restricted": true
+      },
+      {
+        "key": "name",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "photo",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "gender",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "date_of_birth",
+        "type": "date",
+        "options": [],
+        "restricted": true
+      },
+      {
+        "key": "category",
+        "type": "text",
+        "options": [
+          "General",
+          "SC",
+          "ST",
+          "OBC",
+          "EWS"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "designation",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "employment_type",
+        "type": "text",
+        "options": [
+          "Full-time",
+          "Part-time",
+          "Visiting",
+          "Contract"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "nature_of_appointment",
+        "type": "text",
+        "options": [
+          "Regular",
+          "Ad-hoc",
+          "Contract",
+          "Visiting"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "cadre",
+        "type": "text",
+        "options": [
+          "Teaching",
+          "Non-teaching"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "pay_scale_pay_level",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "university_approval_status",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "university_approval_ref_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "joining_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "date_of_last_promotion",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "leaving_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "employment_status",
+        "type": "text",
+        "options": [
+          "Active",
+          "On Leave",
+          "Resigned",
+          "Retired"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "highest_qualification",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "ug_education_details",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "pg_education_details",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "phd_education_details",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "certifications",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "phd",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "phd_university",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "phd_award_year",
+        "type": "smallint",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "recognised_phd_guide",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_scholars_registered",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "specialisation",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "research_interests",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "total_experience",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "email",
+        "type": "text",
+        "options": [],
+        "restricted": true
+      },
+      {
+        "key": "phone",
+        "type": "text",
+        "options": [],
+        "restricted": true
+      },
+      {
+        "key": "orcid_id",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "scopus_id",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "google_scholar_id",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "vidwan_or_other_research_profile_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "sanctioned_posts",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "previous_experience",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "phd_guidance",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Programs Attended by Faculty",
+    "fields": [
+      "Faculty Name",
+      "Program Title",
+      "Type (Workshop / Seminar / Orientation / STTP / FDP / Conference)",
+      "Role (Participant / Presenter / Session Chair / Resource Person)",
+      "Organised By",
+      "Location",
+      "Mode (Online / Offline / Hybrid)",
+      "Level (State / National / International)",
+      "Start Date",
+      "End Date",
+      "Number of Days",
+      "Number of Hours",
+      "Program Website or Brochure Link",
+      "Funded by the Organiser (Yes / No)",
+      "Financial Support Given (Yes / No)",
+      "Sponsoring Body for the Support (Institution / AICTE / University / Other)",
+      "Support Type (Registration fee / Travel / Accommodation / Membership fee)",
+      "Amount Supported",
+      "Key Learning or Outcome"
+    ],
+    "table": "faculty_programs",
+    "columns": [
+      {
+        "key": "faculty_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "program_title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "type",
+        "type": "text",
+        "options": [
+          "Workshop",
+          "Seminar",
+          "Orientation",
+          "STTP",
+          "FDP",
+          "Conference"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "role",
+        "type": "text",
+        "options": [
+          "Participant",
+          "Presenter",
+          "Session Chair",
+          "Resource Person"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "organised_by",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "location",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "mode",
+        "type": "text",
+        "options": [
+          "Online",
+          "Offline",
+          "Hybrid"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "level",
+        "type": "text",
+        "options": [
+          "State",
+          "National",
+          "International"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_days",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_hours",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "program_website_or_brochure_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "funded_by_the_organiser",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "financial_support_given",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "sponsoring_body_for_the_support",
+        "type": "text",
+        "options": [
+          "Institution",
+          "AICTE",
+          "University",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "support_type",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "amount_supported",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "key_learning_or_outcome",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Faculty Interaction with Outside World",
+    "fields": [
+      "Faculty Name",
+      "Interaction Type (Subject Expert / Membership / Industry Training / Resource Person / Reviewer / Editorial Board / BOS Member / Other)",
+      "Title",
+      "Organisation",
+      "Organisation Type (University / Industry / Government / Professional Body / Other)",
+      "Position / Role",
+      "Membership No and Grade (only for Membership)",
+      "Level (State / National / International)",
+      "Mode (Online / Offline / Hybrid)",
+      "Place",
+      "Start Date",
+      "End Date",
+      "Number of Days",
+      "Number of Hours",
+      "Paid or Honorary (Paid / Honorary)",
+      "Amount Received (only if Paid)",
+      "Website or Invitation Link",
+      "Linked MoU",
+      "Description",
+      "Contribution Description (for example papers reviewed, sessions taken)",
+      "Number of Students or Participants Benefited",
+      "Outcome"
+    ],
+    "table": "faculty_interactions",
+    "columns": [
+      {
+        "key": "faculty_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "interaction_type",
+        "type": "text",
+        "options": [
+          "Subject Expert",
+          "Membership",
+          "Industry Training",
+          "Resource Person",
+          "Reviewer",
+          "Editorial Board",
+          "BOS Member",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "organisation",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "organisation_type",
+        "type": "text",
+        "options": [
+          "University",
+          "Industry",
+          "Government",
+          "Professional Body",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "position_role",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "membership_no_and_grade",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "level",
+        "type": "text",
+        "options": [
+          "State",
+          "National",
+          "International"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "mode",
+        "type": "text",
+        "options": [
+          "Online",
+          "Offline",
+          "Hybrid"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "place",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_days",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_hours",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "paid_or_honorary",
+        "type": "text",
+        "options": [
+          "Paid",
+          "Honorary"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "amount_received",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "website_or_invitation_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_mou",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "description",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "contribution_description",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_students_or_participants_benefited",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "outcome",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Publications",
+    "fields": [
+      "Type (Journal / Conference / Book / Book Chapter)",
+      "Paper Status (Accepted / Published)",
+      "Title",
+      "Authors (in order, Faculty / Student / External)",
+      "Corresponding Author",
+      "Number of Authors from the Institute",
+      "Student Co-author (Yes / No)",
+      "Author's Affiliation at the Time",
+      "Journal Name / Book Title",
+      "Volume and Issue",
+      "Page Numbers",
+      "Chapter Title",
+      "Edition and Year (for books)",
+      "Conference Name",
+      "Conference Location and Dates",
+      "Proceedings Title",
+      "Series Name",
+      "Level (National / International)",
+      "Publisher",
+      "ISSN",
+      "ISBN",
+      "DOI",
+      "Indexing (Scopus / WoS / UGC CARE / Other)",
+      "Indexing Valid For Year",
+      "UGC CARE Link",
+      "Quartile (Q1 / Q2 / Q3 / Q4)",
+      "Impact Factor",
+      "Citations",
+      "Peer Reviewed (Yes / No)",
+      "Open Access (Yes / No)",
+      "Publication Date",
+      "Link"
+    ],
+    "table": "publications",
+    "columns": [
+      {
+        "key": "type",
+        "type": "text",
+        "options": [
+          "Journal",
+          "Conference",
+          "Book",
+          "Book Chapter"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "paper_status",
+        "type": "text",
+        "options": [
+          "Accepted",
+          "Published"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "authors",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "corresponding_author",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_authors_from_the_institute",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "student_co_author",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "author_s_affiliation_at_the_time",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "journal_name_book_title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "volume_and_issue",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "page_numbers",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "chapter_title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "edition_and_year",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "conference_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "conference_location_and_dates",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "proceedings_title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "series_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "level",
+        "type": "text",
+        "options": [
+          "National",
+          "International"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "publisher",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "issn",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "isbn",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "doi",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "indexing",
+        "type": "text",
+        "options": [
+          "Scopus",
+          "WoS",
+          "UGC CARE",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "indexing_valid_for_year",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "ugc_care_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "quartile",
+        "type": "text",
+        "options": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "impact_factor",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "citations",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "peer_reviewed",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "open_access",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "publication_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Grants",
+    "fields": [
+      "Grant Type (Proposal / Sponsored Project / Seed Money / CSR)",
+      "Project Category (Sponsored Research / Infrastructure / CSR / Internal)",
+      "Title",
+      "Principal Investigator",
+      "Principal Investigator's Department",
+      "Co-Investigators",
+      "Co-Investigators' Departments",
+      "Funding Agency",
+      "Agency Type (Government / Non-Government)",
+      "Agency Source Category (Government / Non-Government / CSR / Industry)",
+      "Scheme Name",
+      "Submission Date",
+      "Proposal Status (Submitted / Accepted / Rejected / Withdrawn)",
+      "Decision Date",
+      "Reason for Rejection",
+      "Sanction Order No",
+      "Sanction Date",
+      "Amount Requested",
+      "Amount Sanctioned",
+      "Start Date",
+      "End Date",
+      "Duration (Months)",
+      "Extension Granted (Yes / No)",
+      "Extended End Date",
+      "Instalments (Date, Amount)",
+      "Month and Year Grant Received",
+      "Total Amount Received to Date",
+      "Amount Utilised",
+      "Utilisation Certificate (Yes / No)",
+      "Number of Students Involved",
+      "Number of Publications Resulting",
+      "Outcomes (Publications, Prototypes, PhD graduates, Other)",
+      "Linked Publication, Patent or Prototype"
+    ],
+    "table": "grants",
+    "columns": [
+      {
+        "key": "grant_type",
+        "type": "text",
+        "options": [
+          "Proposal",
+          "Sponsored Project",
+          "Seed Money",
+          "CSR"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "project_category",
+        "type": "text",
+        "options": [
+          "Sponsored Research",
+          "Infrastructure",
+          "CSR",
+          "Internal"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "principal_investigator",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "principal_investigator_s_department",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "co_investigators",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "co_investigators_departments",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "funding_agency",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "agency_type",
+        "type": "text",
+        "options": [
+          "Government",
+          "Non-Government"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "agency_source_category",
+        "type": "text",
+        "options": [
+          "Government",
+          "Non-Government",
+          "CSR",
+          "Industry"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "scheme_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "submission_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "proposal_status",
+        "type": "text",
+        "options": [
+          "Submitted",
+          "Accepted",
+          "Rejected",
+          "Withdrawn"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "decision_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "reason_for_rejection",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "sanction_order_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "sanction_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "amount_requested",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "amount_sanctioned",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "duration",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "extension_granted",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "extended_end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "instalments",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "month_and_year_grant_received",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "total_amount_received_to_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "amount_utilised",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "utilisation_certificate",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_students_involved",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_publications_resulting",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "outcomes",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_publication_patent_or_prototype",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Consultancy",
+    "fields": [
+      "Project Title",
+      "Category",
+      "Description",
+      "Project Status (Ongoing / Completed)",
+      "Client / Organisation",
+      "Client Type (Industry / Government / NGO / Startup / Other)",
+      "Client Location",
+      "Client Contact Person (restricted)",
+      "Linked MoU",
+      "Work Order / Agreement No",
+      "Agreement Date",
+      "Sanction Year",
+      "Faculty Involved (PI, Co-PI)",
+      "Students Involved",
+      "Number of Students Involved",
+      "Project Type (Group / Individual)",
+      "Start Date",
+      "End Date",
+      "Duration",
+      "Outcome / Deliverable",
+      "Fees Without GST",
+      "Fees Received",
+      "Balance Fees Pending",
+      "Date Received by College",
+      "Payment Mode (Cheque / Bank transfer / Other)",
+      "Institution Share",
+      "Faculty Share",
+      "Client Feedback or Completion Certificate"
+    ],
+    "table": "consultancy",
+    "columns": [
+      {
+        "key": "project_title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "category",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "description",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "project_status",
+        "type": "text",
+        "options": [
+          "Ongoing",
+          "Completed"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "client_organisation",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "client_type",
+        "type": "text",
+        "options": [
+          "Industry",
+          "Government",
+          "NGO",
+          "Startup",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "client_location",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "client_contact_person",
+        "type": "text",
+        "options": [],
+        "restricted": true
+      },
+      {
+        "key": "linked_mou",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "work_order_agreement_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "agreement_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "sanction_year",
+        "type": "smallint",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "faculty_involved",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "students_involved",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_students_involved",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "project_type",
+        "type": "text",
+        "options": [
+          "Group",
+          "Individual"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "duration",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "outcome_deliverable",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "fees_without_gst",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "fees_received",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "balance_fees_pending",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "date_received_by_college",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "payment_mode",
+        "type": "text",
+        "options": [
+          "Cheque",
+          "Bank transfer",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "institution_share",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "faculty_share",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "client_feedback_or_completion_certificate",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Patents",
+    "fields": [
+      "Title",
+      "Domain / Field of Invention",
+      "Abstract",
+      "Patent Type (Utility / Design / Provisional / Complete)",
+      "Patent Office / Country (India / US / PCT / Other)",
+      "Inventors (Lead, Co-inventors)",
+      "Number of Inventors from the Institute",
+      "Inventor Departments",
+      "Inventor Affiliations at the Time of Filing",
+      "Applicant Name",
+      "Applicant Type (Institution / Individual / Joint)",
+      "Application No",
+      "Filing Date of Provisional Application",
+      "Filing Date",
+      "Publication Date",
+      "Request for Examination Date",
+      "Patent No",
+      "Grant Date",
+      "Grant Year (filled in automatically)",
+      "Patent Status (Filed / Published / Granted)",
+      "Fees Paid",
+      "Renewal Fee Paid Till",
+      "Commercialised or Licensed (Yes / No)",
+      "Linked Startup, Grant or Prototype",
+      "Patent Link (public record)"
+    ],
+    "table": "patents",
+    "columns": [
+      {
+        "key": "title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "domain_field_of_invention",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "abstract",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "patent_type",
+        "type": "text",
+        "options": [
+          "Utility",
+          "Design",
+          "Provisional",
+          "Complete"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "patent_office_country",
+        "type": "text",
+        "options": [
+          "India",
+          "US",
+          "PCT",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "inventors",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_inventors_from_the_institute",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "inventor_departments",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "inventor_affiliations_at_the_time_of_filing",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "applicant_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "applicant_type",
+        "type": "text",
+        "options": [
+          "Institution",
+          "Individual",
+          "Joint"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "application_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "filing_date_of_provisional_application",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "filing_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "publication_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "request_for_examination_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "patent_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "grant_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "grant_year",
+        "type": "smallint",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "patent_status",
+        "type": "text",
+        "options": [
+          "Filed",
+          "Published",
+          "Granted"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "fees_paid",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "renewal_fee_paid_till",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "commercialised_or_licensed",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_startup_grant_or_prototype",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "patent_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Copyright",
+    "fields": [
+      "Title",
+      "Type of Work (Software / Dataset / Literary / Other)",
+      "Class of Work (Literary / Software / Artistic / Musical / Cinematographic / Sound Recording)",
+      "Description of the Work",
+      "Language of the Work",
+      "Published / Unpublished",
+      "Year of Creation or First Publication",
+      "Author(s) / Faculty",
+      "Number of Authors from the Institute",
+      "Author Departments",
+      "Author Affiliations at the Time of Filing",
+      "Applicant",
+      "Applicant Type (Institution / Individual / Joint)",
+      "Diary No",
+      "Date of Filing",
+      "Registration Office (Copyright Office, New Delhi / Other)",
+      "Objection or Examiner Reply Date",
+      "Registration No",
+      "Registration Date",
+      "Registration Charges",
+      "Copyright Status (Filed / Registered)",
+      "Commercialised or Licensed (Yes / No)",
+      "Linked Startup, Grant or Prototype",
+      "Linked Publication",
+      "Public Link"
+    ],
+    "table": "copyrights",
+    "columns": [
+      {
+        "key": "title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "type_of_work",
+        "type": "text",
+        "options": [
+          "Software",
+          "Dataset",
+          "Literary",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "class_of_work",
+        "type": "text",
+        "options": [
+          "Literary",
+          "Software",
+          "Artistic",
+          "Musical",
+          "Cinematographic",
+          "Sound Recording"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "description_of_the_work",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "language_of_the_work",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "published_unpublished",
+        "type": "text",
+        "options": [
+          "Published",
+          "Unpublished"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "year_of_creation_or_first_publication",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "author_s_faculty",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_authors_from_the_institute",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "author_departments",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "author_affiliations_at_the_time_of_filing",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "applicant",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "applicant_type",
+        "type": "text",
+        "options": [
+          "Institution",
+          "Individual",
+          "Joint"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "diary_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "date_of_filing",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "registration_office",
+        "type": "text",
+        "options": [
+          "Copyright Office, New Delhi",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "objection_or_examiner_reply_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "registration_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "registration_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "registration_charges",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "copyright_status",
+        "type": "text",
+        "options": [
+          "Filed",
+          "Registered"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "commercialised_or_licensed",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_startup_grant_or_prototype",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_publication",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "public_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Entrepreneurship / Startups",
+    "fields": [
+      "Company Name",
+      "Company Address",
+      "Relationship to Institute (Faculty / Student / Alumni Startup)",
+      "Date of Incorporation",
+      "Year of Registration",
+      "Legal Structure (Private Ltd / LLP / OPC / Partnership / Proprietorship)",
+      "Sector",
+      "Product / Service Description",
+      "Type of Innovation (IP-based / Non-IP / Service / Manufacturing)",
+      "Stage (Idea / Prototype / Revenue / Scaling)",
+      "DPIIT / Startup India Recognition (Yes / No)",
+      "Recognition No",
+      "Registration Numbers (CIN / DIPP / MSME / GST / PAN)",
+      "Founders (Name, Type, Gender, DIN, Email, Phone)",
+      "Number of Founders",
+      "Number of Women Founders",
+      "Founder Batch / Passing Year",
+      "Current Status (Incubated / Graduated / Exited)",
+      "Incubation Unit",
+      "Incubation Start Date",
+      "Incubation End Date",
+      "Incubation Support Received (Space / Mentoring / Funding / Other)",
+      "Exit Date",
+      "Awards",
+      "Patents / Copyrights Linked",
+      "Number of Employees",
+      "Number of Jobs Created",
+      "Income Generated",
+      "Turnover",
+      "Valuation",
+      "Funding Received",
+      "Grant from Institute",
+      "Seed / Angel Funding (Funder, Amount, Date)",
+      "Linked Grant or Seed Money Record",
+      "Website",
+      "Social Media Link"
+    ],
+    "table": "startups",
+    "columns": [
+      {
+        "key": "company_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "company_address",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "relationship_to_institute",
+        "type": "text",
+        "options": [
+          "Faculty",
+          "Student",
+          "Alumni Startup"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "date_of_incorporation",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "year_of_registration",
+        "type": "smallint",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "legal_structure",
+        "type": "text",
+        "options": [
+          "Private Ltd",
+          "LLP",
+          "OPC",
+          "Partnership",
+          "Proprietorship"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "sector",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "product_service_description",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "type_of_innovation",
+        "type": "text",
+        "options": [
+          "IP-based",
+          "Non-IP",
+          "Service",
+          "Manufacturing"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "stage",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "dpiit_startup_india_recognition",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "recognition_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "registration_numbers",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "founders",
+        "type": "jsonb",
+        "options": [],
+        "restricted": true
+      },
+      {
+        "key": "number_of_founders",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_women_founders",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "founder_batch_passing_year",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "current_status",
+        "type": "text",
+        "options": [
+          "Incubated",
+          "Graduated",
+          "Exited"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "incubation_unit",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "incubation_start_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "incubation_end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "incubation_support_received",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "exit_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "awards",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "patents_copyrights_linked",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_employees",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_jobs_created",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "income_generated",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "turnover",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "valuation",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "funding_received",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "grant_from_institute",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "seed_angel_funding",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_grant_or_seed_money_record",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "website",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "social_media_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Events",
+    "fields": [
+      "Event Title",
+      "Type (Workshop / Seminar / Orientation / FDP / STTP / Concert / Exhibition / Competition / Outreach / Guest Lecture / Other)",
+      "Themes (IPR / Research Methodology / Entrepreneurship / Skill Development / Cultural / Sports / Social / Other)",
+      "Event (Team / Individual)",
+      "Parent Event (for fests)",
+      "Objective of the Event",
+      "Organising Department(s)",
+      "Organising Club / Committee",
+      "Coordinator / Convener (faculty)",
+      "Collaborating / Sponsoring Agencies (Name, Role, Amount)",
+      "Linked MoU",
+      "Linked Club",
+      "Scheme or Programme Name (for example AICTE VAANI, NSS)",
+      "Start Date",
+      "End Date",
+      "Number of Days",
+      "Number of Hours",
+      "Venue",
+      "Mode (Online / Offline / Hybrid)",
+      "Level (College / University / State / National / International)",
+      "External Event (Yes / No)",
+      "Language of Delivery",
+      "Target Audience (Students / Faculty / Public / Industry)",
+      "Speakers / Performers (Name, Designation, Organisation)",
+      "Number of Resource Persons",
+      "Participants Count",
+      "Students Participated Count",
+      "Faculty Participated Count",
+      "External Participants Count",
+      "Female Participants Count",
+      "Registration Fee per Participant",
+      "Total Expenditure",
+      "Total Revenue",
+      "Sponsorship Amount Received",
+      "Ticket Revenue",
+      "Outcome",
+      "Feedback Collected (Yes / No), with Average Rating",
+      "Certificates Issued (Yes / No)",
+      "Event Website or Registration Link",
+      "Video or Recording Link",
+      "Social Media Links",
+      "Average Rating"
+    ],
+    "table": "events",
+    "columns": [
+      {
+        "key": "event_title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "type",
+        "type": "text",
+        "options": [
+          "Workshop",
+          "Seminar",
+          "Orientation",
+          "FDP",
+          "STTP",
+          "Concert",
+          "Exhibition",
+          "Competition",
+          "Outreach",
+          "Guest Lecture",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "themes",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "event",
+        "type": "text",
+        "options": [
+          "Team",
+          "Individual"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "parent_event",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "objective_of_the_event",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "organising_department_s",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "organising_club_committee",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "coordinator_convener",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "collaborating_sponsoring_agencies",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_mou",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_club",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "scheme_or_programme_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_days",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_hours",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "venue",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "mode",
+        "type": "text",
+        "options": [
+          "Online",
+          "Offline",
+          "Hybrid"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "level",
+        "type": "text",
+        "options": [
+          "College",
+          "University",
+          "State",
+          "National",
+          "International"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "external_event",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "language_of_delivery",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "target_audience",
+        "type": "text",
+        "options": [
+          "Students",
+          "Faculty",
+          "Public",
+          "Industry"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "speakers_performers",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_resource_persons",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "participants_count",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "students_participated_count",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "faculty_participated_count",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "external_participants_count",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "female_participants_count",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "registration_fee_per_participant",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "total_expenditure",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "total_revenue",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "sponsorship_amount_received",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "ticket_revenue",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "outcome",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "feedback_collected",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "certificates_issued",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "event_website_or_registration_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "video_or_recording_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "social_media_links",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "average_rating",
+        "type": "numeric(4,2)",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "MoUs",
+    "fields": [
+      "Organisation",
+      "Organisation Type (Industry / University / Government / NGO / Professional Body / Other)",
+      "Organisation Location (City, State, Country)",
+      "Organisation Contact Person (restricted)",
+      "Level (National / International)",
+      "Initiating Department",
+      "Other Departments",
+      "Faculty Coordinators",
+      "MoU Type (Training / R&D / Internship / Placement / Consultancy / Academic)",
+      "Purpose",
+      "Activities Planned Under the MoU",
+      "Date of Signing",
+      "Signatory from the Institute (Name, Designation)",
+      "Signatory from the Organisation (Name, Designation)",
+      "Duration / Valid Until",
+      "MoU Status (Active / Expired / Terminated)",
+      "Renewed (Yes / No)",
+      "Renewal Date",
+      "Termination Date",
+      "Termination Reason",
+      "Financial Value, if any (amount received or spent)",
+      "Yearly Activities (Year, Activity, Students Benefited, Faculty Benefited)",
+      "Number of Activities Conducted in the Year",
+      "Number of Students Benefited in the Year",
+      "Number of Faculty Benefited in the Year",
+      "Outcomes (internships, placements, projects, training)",
+      "Linked Events, Internships or Consultancy Records",
+      "Website or Public Link"
+    ],
+    "table": "mous",
+    "columns": [
+      {
+        "key": "organisation",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "organisation_type",
+        "type": "text",
+        "options": [
+          "Industry",
+          "University",
+          "Government",
+          "NGO",
+          "Professional Body",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "organisation_location",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "organisation_contact_person",
+        "type": "text",
+        "options": [],
+        "restricted": true
+      },
+      {
+        "key": "level",
+        "type": "text",
+        "options": [
+          "National",
+          "International"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "initiating_department",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "other_departments",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "faculty_coordinators",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "mou_type",
+        "type": "text",
+        "options": [
+          "Training",
+          "R&D",
+          "Internship",
+          "Placement",
+          "Consultancy",
+          "Academic"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "purpose",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "activities_planned_under_the_mou",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "date_of_signing",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "signatory_from_the_institute",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "signatory_from_the_organisation",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "duration_valid_until",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "mou_status",
+        "type": "text",
+        "options": [
+          "Active",
+          "Expired",
+          "Terminated"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "renewed",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "renewal_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "termination_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "termination_reason",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "financial_value_if_any",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "yearly_activities",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_activities_conducted_in_the_year",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_students_benefited_in_the_year",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_faculty_benefited_in_the_year",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "outcomes",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_events_internships_or_consultancy_records",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "website_or_public_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Infrastructure",
+    "fields": [
+      "Facility Name",
+      "Category (Classroom / Seminar Hall / Lab / Library / Auditorium / Gallery / Studio / Sports / Other)",
+      "Facility Type (Teaching / Research / Support / Student Amenity)",
+      "Building / Block and Floor",
+      "Room No",
+      "Area",
+      "Capacity",
+      "Year Established",
+      "ICT Features (Projector, LAN, WiFi, Smart Board, LMS)",
+      "Available (Yes / No / NA), for checklist items",
+      "Exclusive Use (Yes / No)",
+      "Major Equipment (name, quantity, cost)",
+      "Total Equipment Cost",
+      "Funding Source (Institution / Grant / CSR / Other)",
+      "Usage Hours per Week",
+      "In-charge Faculty or Staff"
+    ],
+    "table": "infrastructure",
+    "columns": [
+      {
+        "key": "facility_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "category",
+        "type": "text",
+        "options": [
+          "Classroom",
+          "Seminar Hall",
+          "Lab",
+          "Library",
+          "Auditorium",
+          "Gallery",
+          "Studio",
+          "Sports",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "facility_type",
+        "type": "text",
+        "options": [
+          "Teaching",
+          "Research",
+          "Support",
+          "Student Amenity"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "building_block_and_floor",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "room_no",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "area",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "capacity",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "year_established",
+        "type": "smallint",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "ict_features",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "available",
+        "type": "text",
+        "options": [
+          "Yes",
+          "No",
+          "NA"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "exclusive_use",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "major_equipment",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "total_equipment_cost",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "funding_source",
+        "type": "text",
+        "options": [
+          "Institution",
+          "Grant",
+          "CSR",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "usage_hours_per_week",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "in_charge_faculty_or_staff",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Best Practices",
+    "fields": [
+      "Title",
+      "Type (Best Practice / Institutional Distinctiveness)",
+      "Objectives",
+      "Context",
+      "Practice Description",
+      "Evidence of Success",
+      "Problems Encountered",
+      "Resources Required",
+      "Coordinator",
+      "Outcomes (Measure, Value)",
+      "Linked Events / Awards / MoUs",
+      "Version",
+      "Valid From"
+    ],
+    "table": "best_practices",
+    "columns": [
+      {
+        "key": "title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "type",
+        "type": "text",
+        "options": [
+          "Best Practice",
+          "Institutional Distinctiveness"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "objectives",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "context",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "practice_description",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "evidence_of_success",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "problems_encountered",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "resources_required",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "coordinator",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "outcomes",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_events_awards_mous",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "version",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "valid_from",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Notable Achievements",
+    "fields": [
+      "Recipient Type (Faculty / Student / Institution / Startup / Club)",
+      "Recipient Name",
+      "Admission No / Employee ID (restricted)",
+      "Gender of the Recipient",
+      "Class / Year of Study (for students)",
+      "Team or Individual",
+      "Team Members (if team)",
+      "Number of Team Members",
+      "Award / Recognition Name",
+      "Award Type (Award / Medal / Certificate of Appreciation / Trophy / Grant)",
+      "Category (Academic / Research / Sports / Cultural / Extension / Social / Other)",
+      "Competition Category (for example Classical Solo)",
+      "Position (First / Second / Third / Consolation / Special / Participation)",
+      "Is Participation Certificate Only (Yes / No)",
+      "Prize Amount or Cash Award",
+      "Awarding Agency",
+      "Awarding Agency Type (Government / Government-recognised / Industry / NGO / Professional Body)",
+      "Agency Nature (State Govt / Central Govt / Philanthropist / Private / Other)",
+      "Awarding Agency Location",
+      "Is External Award (Yes / No)",
+      "Level (University / Zonal / State / National / International)",
+      "Event Name",
+      "Event Location",
+      "Date From",
+      "Date To",
+      "Description (max 100 words)",
+      "Translation Required (Yes / No)",
+      "Club Linked",
+      "Linked Event, Startup or Club Record",
+      "Website or News Link",
+      "Photo of the Award"
+    ],
+    "table": "achievements",
+    "columns": [
+      {
+        "key": "recipient_type",
+        "type": "text",
+        "options": [
+          "Faculty",
+          "Student",
+          "Institution",
+          "Startup",
+          "Club"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "recipient_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "admission_no_employee_id",
+        "type": "text",
+        "options": [],
+        "restricted": true
+      },
+      {
+        "key": "gender_of_the_recipient",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "class_year_of_study",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "team_or_individual",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "team_members",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "number_of_team_members",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "award_recognition_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "award_type",
+        "type": "text",
+        "options": [
+          "Award",
+          "Medal",
+          "Certificate of Appreciation",
+          "Trophy",
+          "Grant"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "category",
+        "type": "text",
+        "options": [
+          "Academic",
+          "Research",
+          "Sports",
+          "Cultural",
+          "Extension",
+          "Social",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "competition_category",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "position",
+        "type": "text",
+        "options": [
+          "First",
+          "Second",
+          "Third",
+          "Consolation",
+          "Special",
+          "Participation"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "is_participation_certificate_only",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "prize_amount_or_cash_award",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "awarding_agency",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "awarding_agency_type",
+        "type": "text",
+        "options": [
+          "Government",
+          "Government-recognised",
+          "Industry",
+          "NGO",
+          "Professional Body"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "agency_nature",
+        "type": "text",
+        "options": [
+          "State Govt",
+          "Central Govt",
+          "Philanthropist",
+          "Private",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "awarding_agency_location",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "is_external_award",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "level",
+        "type": "text",
+        "options": [
+          "University",
+          "Zonal",
+          "State",
+          "National",
+          "International"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "event_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "event_location",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "date_from",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "date_to",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "description",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "translation_required",
+        "type": "boolean",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "club_linked",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "linked_event_startup_or_club_record",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "website_or_news_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "photo_of_the_award",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Committees",
+    "fields": [
+      "Committee Name",
+      "Type (Ethics / BOS / IQAC / CDC / Grievance / Other)",
+      "Issuing Body (College / University)",
+      "Constituted Date",
+      "Valid From",
+      "Valid To",
+      "Roles and Responsibilities",
+      "Members (Name, Category: Faculty / Alumni / Student / External / Industry, Role, From, To)",
+      "Meetings (Date, Agenda, Attendance, Minutes)",
+      "Actions Taken (Action, Owner, Due Date, Status)"
+    ],
+    "table": "committees",
+    "columns": [
+      {
+        "key": "committee_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "type",
+        "type": "text",
+        "options": [
+          "Ethics",
+          "BOS",
+          "IQAC",
+          "CDC",
+          "Grievance",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "issuing_body",
+        "type": "text",
+        "options": [
+          "College",
+          "University"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "constituted_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "valid_from",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "valid_to",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "roles_and_responsibilities",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "members",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "meetings",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "actions_taken",
+        "type": "jsonb",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Policies",
+    "fields": [
+      "Title",
+      "Type (Research Ethics / Animal Ethics / Biosafety / BOS / Recruitment / Appraisal / Staff Conduct / Student Conduct / Water / Energy / Waste / Other)",
+      "Issuing Body (College / University)",
+      "Version",
+      "Approved Date",
+      "Next Review Date",
+      "Applies To"
+    ],
+    "table": "policies",
+    "columns": [
+      {
+        "key": "title",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "type",
+        "type": "text",
+        "options": [
+          "Research Ethics",
+          "Animal Ethics",
+          "Biosafety",
+          "BOS",
+          "Recruitment",
+          "Appraisal",
+          "Staff Conduct",
+          "Student Conduct",
+          "Water",
+          "Energy",
+          "Waste",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "issuing_body",
+        "type": "text",
+        "options": [
+          "College",
+          "University"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "version",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "approved_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "next_review_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "applies_to",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Programs Offered and Intake",
+    "fields": [
+      "Level (UG / PG / PhD / Diploma)",
+      "Duration (Years)",
+      "Start Year (for example 2026-27)",
+      "Approving Body (AICTE / University / Other)",
+      "Approval Reference and Validity",
+      "Sanctioned Intake",
+      "Lateral Entry Intake",
+      "Students Enrolled",
+      "Seats Filled",
+      "Programme Status (Active / Discontinued / Proposed)"
+    ],
+    "table": "program_intake",
+    "columns": [
+      {
+        "key": "level",
+        "type": "text",
+        "options": [
+          "UG",
+          "PG",
+          "PhD",
+          "Diploma"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "duration",
+        "type": "numeric(16,2)",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "start_year",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "approving_body",
+        "type": "text",
+        "options": [
+          "AICTE",
+          "University",
+          "Other"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "approval_reference_and_validity",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "sanctioned_intake",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "lateral_entry_intake",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "students_enrolled",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "seats_filled",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "programme_status",
+        "type": "text",
+        "options": [
+          "Active",
+          "Discontinued",
+          "Proposed"
+        ],
+        "restricted": false
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Faculty Citation and h-index Details",
+    "fields": [
+      "Faculty Name",
+      "Source (Scopus / Web of Science / Google Scholar)",
+      "Author Profile ID / Link",
+      "Total Publications",
+      "Total Citations",
+      "h-index",
+      "i10-index",
+      "As-on Date"
+    ],
+    "table": "faculty_citations",
+    "columns": [
+      {
+        "key": "faculty_name",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "source",
+        "type": "text",
+        "options": [
+          "Scopus",
+          "Web of Science",
+          "Google Scholar"
+        ],
+        "restricted": false
+      },
+      {
+        "key": "author_profile_id_link",
+        "type": "text",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "total_publications",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "total_citations",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "h_index",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "i10_index",
+        "type": "integer",
+        "options": [],
+        "restricted": false
+      },
+      {
+        "key": "as_on_date",
+        "type": "date",
+        "options": [],
+        "restricted": false
+      }
+    ]
+  }
+]
