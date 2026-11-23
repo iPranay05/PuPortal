@@ -202,7 +202,7 @@ export function DashboardOverview({
 
           <div className="dashboard-action-list">
             {missingProofItems.length > 0 ? (
-              missingProofItems.map((item) => (
+              missingProofItems.map((item: any) => (
                 <div key={item.id} className="dashboard-action-item">
                   <div className="dashboard-item-text">
                     <span className="dashboard-item-meta">
@@ -246,7 +246,7 @@ export function DashboardOverview({
 
           <div className="dashboard-action-list">
             {waitingVerificationItems.length > 0 ? (
-              waitingVerificationItems.map((item) => (
+              waitingVerificationItems.map((item: any) => (
                 <div key={item.id} className="dashboard-action-item">
                   <div className="dashboard-item-text">
                     <span className="dashboard-item-meta">

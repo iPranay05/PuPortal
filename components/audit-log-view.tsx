@@ -139,7 +139,7 @@ export function AuditLogView({ isRealUser = false, userStaff }: AuditLogViewProp
               </tr>
             </thead>
             <tbody>
-              {filteredLogs.map((log) => (
+              {filteredLogs.map((log: any) => (
                 <tr key={log.id}>
                   {/* Date & Time */}
                   <td className="font-mono text-xs text-gray-700 whitespace-nowrap">

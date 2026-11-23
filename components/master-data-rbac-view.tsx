@@ -8,7 +8,7 @@ import {
   DEMO_USERS,
 } from '@/lib/mock-demo-data'
 
-export function MasterDataRbacView() {
+export function MasterDataRbacView({ isRealUser: _isRealUser = false }: { isRealUser?: boolean }) {
   const [activeTab, setActiveTab] = useState<
     | 'schools'
     | 'departments'
